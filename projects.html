@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Saad Waseem</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">Saad Waseem</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="projects.html" class="nav-link active">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="admin.html" class="nav-link">Admin</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Projects Section -->
+    <section class="projects-page">
+        <div class="container">
+            <h1 class="page-title fade-in">My Projects</h1>
+            
+            <!-- Changed to vertical layout with image galleries -->
+            <div class="projects-vertical">
+
+             <div class="project-section slide-up">
+                    <div class="project-header">
+                        <h2>CI/CD Pipeline with GitHub</h2>
+                        <p class="project-description">Automated deployment pipeline integrating GitHub repositories with AWS CodePipeline and CodeBuild. Features automatic testing, build processes, and seamless deployment with rollback capabilities.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">GitHub Actions</span>
+                            <span class="tech-tag">AWS CodePipeline</span>
+                            <span class="tech-tag">CodeBuild</span>
+                            <span class="tech-tag">Docker</span>
+                        </div>
+                    </div>
+                    <div class="project-gallery">
+                        <div class="gallery-container">
+                            <img src="/placeholder.svg?height=300&width=500" alt="CI/CD Pipeline" class="gallery-image active" data-project="cicd-pipeline">
+                            <img src="/placeholder.svg?height=300&width=500" alt="CodePipeline Dashboard" class="gallery-image" data-project="cicd-pipeline">
+                            <img src="/placeholder.svg?height=300&width=500" alt="Testing Results" class="gallery-image" data-project="cicd-pipeline">
+                        </div>
+                        <div class="project-buttons">
+                            <a href="#" class="btn btn-primary" target="_blank">View Live Project</a>
+                            <a href="#" class="btn btn-secondary" target="_blank">View on GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="project-section slide-up">
+                    <div class="project-header">
+                        <h2>Website Hosting with AWS</h2>
+                        <p class="project-description">Complete web hosting solution using AWS S3 for static hosting, CloudFront for global content delivery, Route53 for DNS management, and ACM for SSL certificates. Built with scalable and secure cloud infrastructure.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">AWS S3</span>
+                            <span class="tech-tag">CloudFront</span>
+                            <span class="tech-tag">Route53</span>
+                            <span class="tech-tag">ACM</span>
+                        </div>
+                    </div>
+                    <div class="project-gallery">
+                        <div class="gallery-container">
+                            <img src="/placeholder.svg?height=300&width=500" alt="AWS Hosting Project" class="gallery-image active" data-project="aws-hosting">
+                            <img src="/placeholder.svg?height=300&width=500" alt="CloudFront Setup" class="gallery-image" data-project="aws-hosting">
+                            <img src="/placeholder.svg?height=300&width=500" alt="Route53 DNS" class="gallery-image" data-project="aws-hosting">
+                        </div>
+                        <div class="project-buttons">
+                            <a href="#" class="btn btn-primary" target="_blank">View Live Project</a>
+                            <a href="#" class="btn btn-secondary" target="_blank">View on GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+               
+                <div class="project-section slide-up">
+                    <div class="project-header">
+                        <h2>Website Monitoring System</h2>
+                        <p class="project-description">Comprehensive monitoring solution using AWS Lambda for automated health checks, Aurora database for logging performance metrics, and SNS for real-time notifications. Ensures optimal website performance and uptime tracking.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">AWS Lambda</span>
+                            <span class="tech-tag">Aurora DB</span>
+                            <span class="tech-tag">SNS</span>
+                            <span class="tech-tag">CloudWatch</span>
+                        </div>
+                    </div>
+                    <div class="project-gallery">
+                        <div class="gallery-container">
+                            <img src="/placeholder.svg?height=300&width=500" alt="Monitoring Dashboard" class="gallery-image active" data-project="monitoring-system">
+                            <img src="/placeholder.svg?height=300&width=500" alt="Lambda Functions" class="gallery-image" data-project="monitoring-system">
+                            <img src="/placeholder.svg?height=300&width=500" alt="Performance Metrics" class="gallery-image" data-project="monitoring-system">
+                        </div>
+                        <div class="project-buttons">
+                            <a href="#" class="btn btn-primary" target="_blank">View Live Project</a>
+                            <a href="#" class="btn btn-secondary" target="_blank">View on GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="coming-soon slide-up">
+                <h2>More Projects Coming Soon...</h2>
+                <p>Stay tuned for exciting new developments and innovative solutions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Saad Waseem</p>
+                <div class="social-links">
+                    <a href="#" class="social-link">LinkedIn</a>
+                    <a href="#" class="social-link">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

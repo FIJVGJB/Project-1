@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrator Access - Saad Waseem</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="admin-body">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">Saad Waseem</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="projects.html" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="admin.html" class="nav-link active">Admin</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Admin Section -->
+    <section class="admin-section">
+        <div class="container">
+            <div class="admin-container fade-in">
+                <h1 class="admin-title">Administrator Access</h1>
+                
+                <div class="face-recognition-panel">
+                    <div class="upload-section">
+                        <h3>Face Recognition Login</h3>
+                        <!-- Replaced upload with camera access -->
+                        <div class="camera-section">
+                            <div class="camera-controls">
+                                <button class="btn btn-primary" id="startCameraBtn" onclick="startCamera()">
+                                    Start Camera
+                                </button>
+                                <button class="btn btn-secondary" id="stopCameraBtn" onclick="stopCamera()" style="display: none;">
+                                    Stop Camera
+                                </button>
+                            </div>
+                            <div class="video-container" id="videoContainer" style="display: none;">
+                                <video id="cameraVideo" autoplay muted></video>
+                                <canvas id="captureCanvas" style="display: none;"></canvas>
+                            </div>
+                            <div class="capture-section" id="captureSection" style="display: none;">
+                                <button class="btn btn-primary" id="scanFaceBtn" onclick="captureAndScan()">
+                                    Scan Face
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="scan-status" id="scanStatus" style="display: none;">
+                        <div class="scanning-animation">
+                            <div class="scan-line"></div>
+                        </div>
+                        <p id="statusText">Scanning...</p>
+                    </div>
+                </div>
+
+                <!-- Hidden Content Editor (shown after successful scan) -->
+                <div class="content-editor" id="contentEditor" style="display: none;">
+                    <h3>Content Management</h3>
+                    <div class="editor-panel">
+                        <label for="contentTextarea">Edit Website Content:</label>
+                        <textarea id="contentTextarea" rows="10" placeholder="Enter your content here..."></textarea>
+                        <button class="btn btn-primary" onclick="saveChanges()">Save Changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Saad Waseem</p>
+                <div class="social-links">
+                    <a href="#" class="social-link">LinkedIn</a>
+                    <a href="#" class="social-link">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="admin.js"></script>
+</body>
+</html>
