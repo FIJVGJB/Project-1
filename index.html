@@ -127,6 +127,38 @@
         </div>
     </section>
 
+ <script src="https://sdk.amazonaws.com/js/aws-sdk-2.1259.0.min.js"></script>
+<script>
+AWS.config.region = 'us-east-1'; // replace with your region
+AWS.config.credentials = new AWS.CognitoIdentityCredentials({
+    IdentityPoolId: 'us-east-1:xxxxxx-xxxx-xxxx-xxxx-xxxxxxxx'
+});
+
+function updateVisitorCount() {
+    var lambda = new AWS.Lambda();
+    var params = {
+        FunctionName: 'UpdateVisitorCount',
+        InvocationType: 'RequestResponse',
+    };
+    lambda.invoke(params, function(err, data) {
+        if (err) console.error(err);
+        else {
+            var result = JSON.parse(data.Payload);
+            document.getElementById("visitor-count").innerText = result.body;
+        }
+    });
+}
+
+window.onload = updateVisitorCount;
+</script>
+
+<p>👀 Visitors: <span id="visitor-count">Loading...</span></p>
+
+
+
+
+
+
     <!-- Contact Section -->
     <section class="contact" id="contact">
         <div class="container">
